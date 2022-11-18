@@ -15,7 +15,13 @@ function crearUsuario() {
         "clave": cajaClave,
     }
     
-    listaPokeUsuarios.push(Usuario);
-    localStorage.setItem("usuarios", JSON.stringify(listaPokeUsuarios));
+    if (cajaUsuario != "" && cajaClave !="") {
+        listaPokeUsuarios.push(Usuario);
+        localStorage.setItem("usuarios", JSON.stringify(listaPokeUsuarios));
+        location.href = "./logeo.html";
+    }else{
+        alert("Los campos tienen que estar rellenos para poder crear el usuario");
+    }
+    
 }
 
