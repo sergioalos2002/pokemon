@@ -121,7 +121,7 @@ function anadirEquipo() {
                 localStorage.setItem("pokemonEquipo", JSON.stringify(equipo));
                 console.log(equipo);
             }else{
-                console.log("No se ha añadido al pokemon debido a que el maximo de pokemons es 6");
+                alert("No se ha añadido al pokemon debido a que el maximo de pokemons es 6");
             }
         
    
