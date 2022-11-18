@@ -75,6 +75,7 @@ function pintarTabla(lista) {
 
 }
 
+
 function eliminar(pokemonAEliminar) {
     var posicion = listaPokemons.findIndex(pokemon => pokemon.nombre == pokemonAEliminar.nombre);
     if (posicion != -1) {

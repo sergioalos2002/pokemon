@@ -2131,3 +2131,33 @@ section {
   color: #fff;
   text-decoration: none;
 }
+.fondoTipos{
+  background-image: url(../images/fondoTipos.jpg);
+  background-attachment: fixed;
+  color: whitesmoke;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+.fondoPokemon{
+  background-color: rgb(56, 51, 46);
+  color: white;
+  
+}
+.fondoTarjetaPokemon{
+  background-image: url(../images/fondoTarjeta.jpg);
+  background-attachment: fixed;
+  color: whitesmoke;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+
+.listaTipos{
+  list-style-type: none;
+}
+.listaTipos li{
+  display: inline;
+  text-align: center;
+  margin: 0 10px 0 0;
+}

@@ -29,8 +29,9 @@ function pintarTarjeta() {
     var centralTarjeta = document.getElementById("centralTarjeta");
     centralTarjeta.innerHTML = "";
     var tarjeta = document.createElement("div");
+    
     centralTarjeta.appendChild(tarjeta);
-        centralTarjeta.innerHTML = `<div class="card" style="width: 18rem; border: 10px solid #${color}";>
+        centralTarjeta.innerHTML = `<div class="card" style="width: 18rem; border: 10px solid black";>
                                         <img src="./images/pokemons/${nombreTarjetaPokemon}.png" class="card-img-top" alt="..." style=" background-color:#${color};">
                                             <div class="card-body" style="color: black;">
                                             <h5 class="card-title">${nombreTarjetaPokemon}</h5>
@@ -135,6 +136,7 @@ function mostrarEquipo() {
     var capaEquipo = document.getElementById("centralEquipo");
     capaEquipo.innerHTML = "";
     capaEquipo.style.display = "block";
+    capaEquipo.style.paddingTop = "100px";
 
     var colocacionDivImagen = document.createElement("div");
     colocacionDivImagen.style.paddingLeft="200px";
@@ -155,7 +157,7 @@ function mostrarEquipo() {
     titulo.innerHTML = "Tu equipo Pokemon";
     titulo.style.fontFamily = "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
     titulo.style.paddingBottom = "20px";
-    titulo.style.color = "orange";
+    titulo.style.color = "white";
     capaEquipo.appendChild(titulo);
     
 
