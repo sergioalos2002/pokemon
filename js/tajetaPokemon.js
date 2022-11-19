@@ -37,7 +37,7 @@ function pintarTarjeta() {
                                             <h5 class="card-title">${nombreTarjetaPokemon}</h5>
                                             <p class="card-text">${habilidad}</p>
                                             <p class="card-text"><span style="margin-right:20px">${tipoTarjetaPokemon}</span>${texto}</p>
-                                            <a href="./listaPokemon.html"><button id="BTNAnadirEquipo" class="btn btn-primary">Añadir al equipo</button></a>
+                                            <button id="BTNAnadirEquipo" class="btn btn-primary">Añadir al equipo</button>
                                             </div>
                                     </div>`;
                                     document.getElementById("BTNAnadirEquipo").addEventListener("click", anadirEquipo);
@@ -120,8 +120,11 @@ function anadirEquipo() {
                 equipo.push(Pokemon);
                 localStorage.setItem("pokemonEquipo", JSON.stringify(equipo));
                 console.log(equipo);
+                location.href ="./listaPokemon.html";
             }else{
                 alert("No se ha añadido al pokemon debido a que el maximo de pokemons es 6");
+                location.href ="./listaPokemon.html";
+                
             }
         
    
