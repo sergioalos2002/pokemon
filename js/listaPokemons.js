@@ -57,7 +57,6 @@ function pintarTabla(lista) {
             celda.style.paddingLeft = "40px";
             fila.appendChild(celda);
             if (propiedad != "foto") {
-                
                 celda.innerHTML = pokemon[propiedad];
             }else{
                 celda.innerHTML = `<a href='./pokemon.html'><img onclick="cargarVentana('${pokemon.nombre}')" src='./images/pokemons/${pokemon[propiedad]}' width='100px' height='100px'></a>`;
